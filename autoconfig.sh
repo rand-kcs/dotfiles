@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Run at the dotfiles path, otherwise the ls and the pwd won't work.
-# test connection
+# test c
 
 files=$(ls -a | grep -E '^\.[^.]' | grep -v '.git' )
 
