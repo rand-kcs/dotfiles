@@ -53,7 +53,11 @@ set relativenumber
 set tabstop=2
 colorscheme desert
 set cursorline
+
+"make line numbers except cursorline turn grey.
 highlight LineNr ctermfg=grey
+
+"remove the side effect of 'set cursorline', which draw a unneccessay line on the cursorline.
 highlight Cursorline cterm=bold
 
 
