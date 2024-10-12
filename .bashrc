@@ -128,6 +128,8 @@ alias ..="cd .."
 alias dc="cd"
 alias gs="git status"
 alias gg="git graph"
+alias ga="git add"
+alias gc="git commit"
 
 
 . /usr/share/autojump/autojump.sh
