@@ -1,0 +1,9 @@
+[user]
+	name = Huang
+	email = 2460969945@qq.com
+[color]
+	ui = true
+[core]
+	editor = vim
+[alias]
+	graph = log --all --graph --decorate --oneline
