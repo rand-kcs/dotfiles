@@ -49,8 +49,13 @@ set hidden		" Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
 
 set number
+set relativenumber
 set tabstop=2
-"  set cursorline
+colorscheme desert
+set cursorline
+highlight LineNr ctermfg=grey
+highlight Cursorline cterm=bold
+
 
 inoremap ( ()<ESC>i
 inoremap { {}<ESC>i
