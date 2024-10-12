@@ -54,6 +54,14 @@ set tabstop=2
 colorscheme desert
 set cursorline
 
+"enable code folding according syntax
+set foldenable
+set foldmethod=syntax
+
+"disable error bell"
+set noerrorbells
+set belloff=all
+
 "make line numbers except cursorline turn grey.
 highlight LineNr ctermfg=grey
 
