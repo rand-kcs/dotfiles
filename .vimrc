@@ -62,6 +62,15 @@ set foldmethod=syntax
 set noerrorbells
 set belloff=all
 
+"enable smart indention
+set shiftwidth=2
+set smartindent
+
+"display status line
+set laststatus=2
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ Ln\ %l,\ Col\ %c/%L%)
+highlight StatusLine ctermfg=grey ctermbg=black guifg=#ffffff guibg=#0000ff
+
 "make line numbers except cursorline turn grey.
 highlight LineNr ctermfg=grey
 
@@ -70,7 +79,7 @@ highlight Cursorline cterm=bold
 
 
 inoremap ( ()<ESC>i
-inoremap { {}<ESC>i
+"inoremap { {}<ESC>i  "comment out this line for indent feature
 inoremap [ []<ESC>i
 inoremap " ""<ESC>i
 inoremap ' ''<ESC>i
@@ -79,4 +88,5 @@ inoremap ' ''<ESC>i
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
+
 
