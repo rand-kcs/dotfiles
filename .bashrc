@@ -127,6 +127,7 @@ alias mv="mv -i"
 alias ..="cd .."
 alias dc="cd"
 alias gs="git status"
+alias gg="git graph"
 
 
 . /usr/share/autojump/autojump.sh
