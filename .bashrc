@@ -131,6 +131,8 @@ alias gg="git graph"
 alias ga="git add"
 alias gc="git commit"
 
+alias fd="fdfind"
+
 
 . /usr/share/autojump/autojump.sh
 . ~/tmp/mcd.sh
