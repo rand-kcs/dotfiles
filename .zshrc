@@ -18,4 +18,21 @@ precmd() { vcs_info }
 
 zstyle ':vcs_info:git:*' formats '%b ' 
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%~%f %F{cyan}${vcs_info_msg_0_}%f '
+PROMPT='%F{yellow}%~%f %F{cyan}${vcs_info_msg_0_}%f$ '
+
+source ~/.aliases
+
+# load autojump if first time  
+# if type j; then 
+#	. ~/dotfiles/autojump/install.py
+#fi
+
+# enable autojump feature
+[[ -s /home/huang/.autojump/etc/profile.d/autojump.sh ]] && source /home/huang/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
+
+# enable vim in cmd line
+bindkey -v
+
+
