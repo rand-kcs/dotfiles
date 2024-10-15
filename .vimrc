@@ -55,8 +55,9 @@ colorscheme desert
 set cursorline
 
 "enable code folding according syntax
-set foldenable
-set foldmethod=syntax
+"Not handful, commented.
+"set foldenable
+"set foldmethod=syntax
 
 "disable error bell"
 set noerrorbells

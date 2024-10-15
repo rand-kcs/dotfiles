@@ -24,7 +24,7 @@ PROMPT='%F{yellow}%~%f %F{cyan}${vcs_info_msg_0_}%f$ '
 source ~/.aliases
 
 #config environment variable
-source ~/env_var
+source ~/.env_var
 
 # load autojump if first time  
 # if type j; then 
