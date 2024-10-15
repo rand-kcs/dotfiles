@@ -20,7 +20,11 @@ zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
 PROMPT='%F{yellow}%~%f %F{cyan}${vcs_info_msg_0_}%f$ '
 
+#config aliases
 source ~/.aliases
+
+#config environment variable
+source ~/env_var
 
 # load autojump if first time  
 # if type j; then 
@@ -35,4 +39,7 @@ autoload -U compinit && compinit -u
 # enable vim in cmd line
 bindkey -v
 
+#change from Insert to Normal  form GPT
 
+#no beep
+unsetopt BEEP

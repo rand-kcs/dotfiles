@@ -95,13 +95,18 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export NEMU_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench/nemu
-export AM_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench/abstract-machine
-export NPC_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench/npc
-export NVBOARD_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench/nvboard
-export YSYX_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench
-export CLASH_HOME=/home/huang/work/clash-for-linux-master
-export PATH=/usr/lib/ccache:$PATH
+
+#export NEMU_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench/nemu
+#export AM_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench/abstract-machine
+#export NPC_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench/npc
+#export NVBOARD_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench/nvboard
+#export YSYX_HOME=/home/huang/work/YSYX/FrameCode/ysyx-workbench
+#export CLASH_HOME=/home/huang/work/clash-for-linux-master
+#export PATH=/usr/lib/ccache:$PATH
+
+if [ -f ~/.env_var ]; then
+    . ~/.env_var
+fi
 
 
 . /usr/share/autojump/autojump.sh
