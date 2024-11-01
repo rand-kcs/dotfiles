@@ -109,6 +109,4 @@ if [ -f ~/.env_var ]; then
 fi
 
 
-. /usr/share/autojump/autojump.sh
-. ~/tmp/mcd.sh
-. ~/tmp/clash.sh
+#. /usr/share/autojump/autojump.sh
