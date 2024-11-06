@@ -108,5 +108,7 @@ if [ -f ~/.env_var ]; then
     . ~/.env_var
 fi
 
+#set switch escape and capslock
+setxkbmap -option caps:swapescape
 
 #. /usr/share/autojump/autojump.sh
