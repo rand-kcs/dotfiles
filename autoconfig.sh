@@ -3,9 +3,10 @@
 # Run at the dotfiles path, otherwise the ls and the pwd won't work.
 # test c
 
+# 2. download tmux if not installed DONE
+# Auto switch esc and capslock DONE
+# DONE 1. set zsh as default shell
 # Lack:
-# 1. set zsh as default shell
-# 2. download tmux if not installed
 # 3. auto config 'auto suggestion' and 'auto smart jump'
 # 4. git ssh?
 # clash config : lanqiaoyun
@@ -14,11 +15,12 @@
 files=$(ls -a | grep -E '^\.[^.]' | grep -v '.git$' )
 
 
-if which zsh; then
-  sudo apt-get install tmux
+if ! which zsh; then
+  sudo apt-get install zsh
 fi
+chsh -s $(which zsh)
 
-if which tmux; then
+if ! which tmux; then
   sudo apt-get install tmux
 fi
 
