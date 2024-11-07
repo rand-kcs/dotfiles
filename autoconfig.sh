@@ -15,12 +15,12 @@
 files=$(ls -a | grep -E '^\.[^.]' | grep -v '.git$' )
 
 
-if ! which zsh; then
+if ! which zsh > /dev/null; then
   sudo apt-get install zsh
 fi
 chsh -s $(which zsh)
 
-if ! which tmux; then
+if ! which tmux > /dev/null; then
   sudo apt-get install tmux
 fi
 
@@ -35,5 +35,6 @@ if ! [[ -d ~/.zsh/zsh-autosuggestions ]]; then
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 fi
 
-
+# Config clash:
+# sorce lanqiaoyun.sh and  1 -> enter link(First time) and t.
 
