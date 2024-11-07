@@ -11,7 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -Uz vcs_info 
 precmd() { vcs_info }
@@ -43,3 +43,6 @@ bindkey -v
 
 #no beep
 unsetopt BEEP
+
+#enable auto suggestion
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
