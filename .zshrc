@@ -46,3 +46,8 @@ unsetopt BEEP
 
 #enable auto suggestion
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#enable auto jump
+	[[ -s /home/user/.autojump/etc/profile.d/autojump.sh ]] && source /home/user/.autojump/etc/profile.d/autojump.sh
+	autoload -U compinit && compinit -u
+

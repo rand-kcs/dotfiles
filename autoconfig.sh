@@ -35,6 +35,13 @@ if ! [[ -d ~/.zsh/zsh-autosuggestions ]]; then
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 fi
 
+if ! which j > /dev/null; then
+	git clone http://github.com/wting/autojump.git plugin/autojump;
+	cd plugin/autojump ;
+	./install.py;
+fi
+
+
 # Config clash:
 # sorce lanqiaoyun.sh and  1 -> enter link(First time) and t.
 
