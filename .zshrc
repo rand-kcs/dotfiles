@@ -51,3 +51,12 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 	[[ -s /home/user/.autojump/etc/profile.d/autojump.sh ]] && source /home/user/.autojump/etc/profile.d/autojump.sh
 	autoload -U compinit && compinit -u
 
+
+# add neovim
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
+#add Go for lazyvim
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+#export GOBIN=~/go/bin
+export PATH=$PATH:$GOBIN

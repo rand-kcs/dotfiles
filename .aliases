@@ -22,6 +22,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 #handy aliases
 alias mv="mv -i"
 alias ..="cd .."
+alias ...="cd ../.."
 alias dc="cd"
 alias gs="git status"
 alias gg="git graph"
