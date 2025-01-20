@@ -32,5 +32,3 @@ alias gc="git commit"
 
 alias fd="fdfind"
 alias vim="nvim"
-
-
